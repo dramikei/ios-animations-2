@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,104 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="animations2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pg4-sC-TO7" customClass="UIButtonX" customModule="animations2" customModuleProvider="target">
+                                <rect key="frame" x="16" y="608" width="55" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="8ep-Om-tgI"/>
+                                    <constraint firstAttribute="width" constant="55" id="ABk-l3-9Nd"/>
+                                </constraints>
+                                <state key="normal" image="previous"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQb-q4-CHp" customClass="UIButtonX" customModule="animations2" customModuleProvider="target">
+                                <rect key="frame" x="304" y="608" width="55" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="l7A-ak-ixs"/>
+                                    <constraint firstAttribute="height" constant="39" id="yX6-J4-PTR"/>
+                                </constraints>
+                                <state key="normal" image="Next"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="7be09b51039f552def338897157e3266.500x500x1" translatesAutoresizingMaskIntoConstraints="NO" id="cEa-N0-vEF" customClass="UIImageViewX" customModule="animations2" customModuleProvider="target">
+                                <rect key="frame" x="68.5" y="184.5" width="238" height="238"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="238" id="mbd-GD-ePJ"/>
+                                    <constraint firstAttribute="width" constant="238" id="tkF-Ja-8sV"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="119"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWc-9J-NAE">
+                                <rect key="frame" x="109" y="545" width="47" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Shuffle"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="di5-SM-Asr">
+                                <rect key="frame" x="164" y="508" width="47" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Combined Shape"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1JW-8l-Z6p">
+                                <rect key="frame" x="219" y="545" width="47" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="repeat"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BIS-gJ-PTd" customClass="UIButtonX" customModule="animations2" customModuleProvider="target">
+                                <rect key="frame" x="164" y="600" width="47" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="47" id="Dii-n6-t0q"/>
+                                    <constraint firstAttribute="height" constant="47" id="f6k-Jk-EQO"/>
+                                </constraints>
+                                <state key="normal" image="Menu"/>
+                                <connections>
+                                    <action selector="menuBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I3z-Mt-15d"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LQb-q4-CHp" secondAttribute="trailing" constant="16" id="1Og-nv-ROi"/>
+                            <constraint firstItem="cEa-N0-vEF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-30" id="23L-xz-7yq"/>
+                            <constraint firstItem="cEa-N0-vEF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2On-O5-Ioo"/>
+                            <constraint firstItem="BIS-gJ-PTd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8rg-zh-7nv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LQb-q4-CHp" secondAttribute="bottom" constant="20" id="IkO-EH-4jx"/>
+                            <constraint firstItem="pg4-sC-TO7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="X3q-bP-eKE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pg4-sC-TO7" secondAttribute="bottom" constant="20" id="c3Q-od-LrV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BIS-gJ-PTd" secondAttribute="bottom" constant="20" id="fep-0U-4sa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="heartBtn" destination="di5-SM-Asr" id="pS9-DI-Uz3"/>
+                        <outlet property="menuBtn" destination="BIS-gJ-PTd" id="MgF-LK-JmE"/>
+                        <outlet property="repeatBtn" destination="1JW-8l-Z6p" id="Eba-cA-rGG"/>
+                        <outlet property="shuffleBtn" destination="hWc-9J-NAE" id="RpA-bT-KTy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="135" y="132.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="7be09b51039f552def338897157e3266.500x500x1" width="500" height="500"/>
+        <image name="Combined Shape" width="47" height="47"/>
+        <image name="Menu" width="47" height="47"/>
+        <image name="Next" width="76" height="54"/>
+        <image name="Shuffle" width="47" height="47"/>
+        <image name="previous" width="75" height="54"/>
+        <image name="repeat" width="47" height="47"/>
+    </resources>
 </document>
