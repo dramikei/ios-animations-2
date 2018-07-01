@@ -27,6 +27,7 @@ class ViewController: UIViewController {
     
     @IBAction func menuBtnPressed(_ sender: Any) {
         if shuffleBtn.center == menuBtn.center {
+            menuBtn.setImage(UIImage(named: "MenuSelected"), for: .normal)
             setBtnHidden(false)
             UIView.animate(withDuration: 0.4) {
                 self.setBtnAlpha(1)
@@ -35,6 +36,7 @@ class ViewController: UIViewController {
                 self.repeatBtn.center = self.repeatBtnCenter
             }
         } else {
+            menuBtn.setImage(UIImage(named: "Menu"), for: .normal)
             UIView.animate(withDuration: 0.4, animations: {
                 self.setBtnAlpha(0)
                 self.shuffleBtn.center = self.menuBtn.center
